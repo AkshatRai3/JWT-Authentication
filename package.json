@@ -1,7 +1,7 @@
 {
   "name": "jwt-authentication",
   "version": "1.0.0",
-  "description": "",
+  "description": "hi",
   "homepage": "https://github.com/AkshatRai3/JWT-Authentication#readme",
   "bugs": {
     "url": "https://github.com/AkshatRai3/JWT-Authentication/issues"
@@ -18,6 +18,7 @@
     "start": "nodemon index.js"
   },
   "dependencies": {
+    "cookie-parser": "^1.4.7",
     "ejs": "^3.1.10",
     "express": "^5.1.0",
     "mongoose": "^8.15.0",
