@@ -16,7 +16,9 @@ app.set('view engine', 'ejs');
 app.set('views',path.resolve('./views'));
 connectMongoDB("mongodb://127.0.0.1:27017/JWTAuth");
 
-app.use('/user', restrictToLoggedInUserOnly, userRoute )
+
+app.use('/hurr', restrictToLoggedInUserOnly, userRoute)
+app.use('/user', userRoute )
 app.use('/', StaticRoute)
 
 app.listen(PORT, () => {
