@@ -11,15 +11,16 @@ const cookieParser = require('cookie-parser');
 
 app.use(cookieParser())
 app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+app.use(express.urlencoded({ extended: false }));
 app.set('view engine', 'ejs');
 app.set('views',path.resolve('./views'));
 connectMongoDB("mongodb://127.0.0.1:27017/JWTAuth");
 
 
-app.use('/hurr', restrictToLoggedInUserOnly, userRoute)
 app.use('/user', userRoute )
 app.use('/', StaticRoute)
+app.use('/hurr', restrictToLoggedInUserOnly, userRoute)
+
 
 app.listen(PORT, () => {
     console.log(` Server is running on port ${PORT}`);
