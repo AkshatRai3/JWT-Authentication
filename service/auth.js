@@ -1,7 +1,7 @@
 const jwt = require('jsonwebtoken');
-const secret = "palak-deserves-better-than-me"
+const secret = "lifeIShell"
 function setUser(user){
-    jwt.sign({
+    return jwt.sign({
         _id:user._id,
         email:user.email
     },secret);
