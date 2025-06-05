@@ -1,1 +1,8 @@
-nvm
+npm i ejs
+npm i express
+npm i jsonwebtoken
+npm i mongoose
+npm i node
+npm i nodemon
+npm i uuid
+npm i cookie-parser
