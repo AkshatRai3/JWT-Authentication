@@ -20,8 +20,8 @@ async function handleUserLogin(req, res){
          return res.render("login.ejs", {error: "Invalid email or password"} )
      }
      const token = setUser(user);
-     res.cookie( "uid", token);
-     return res.render("homepage.ejs", {user: user.name})
+    //  res.cookie( "uid", token);
+     return res.json({token})
 }
  
 

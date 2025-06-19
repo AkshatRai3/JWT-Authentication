@@ -5,4 +5,4 @@ npm i mongoose
 npm i node
 npm i nodemon
 npm i uuid
-npm i cookie-parser
+npm i cookie-parser : https://expressjs.com/en/resources/middleware/cookie-parser.html
